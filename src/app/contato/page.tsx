@@ -1,15 +1,27 @@
-import type { Metadata } from 'next'
+import React from "react";
 
-export const metadata: Metadata = {
- title: 'Nome da página',
- description: 'Descrição da página'
-}
+type Post = {
+  id: number;
+  title: { rendered: string };
+  slug: string;
+  excerpt: { rendered: string };
+};
 
-export default function contato() {
- return (
-   <div>
-    <h1>contato</h1>
+export default async function Contato() {
+  const res = await fetch("https://head.agenciaplanner.dev/wp-json/wp/v2/posts");
+  const posts: Post[] = await res.json();
 
-   </div>
- );
+  return (
+    <div>
+      <h1>Lista de Posts</h1>
+      <ul>
+        {posts.map((post) => (
+          <li key={post.id}>
+            <a href={`/posts/${post.slug}`}>{post.title.rendered}</a>
+           
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }

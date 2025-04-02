@@ -28,6 +28,11 @@ export  function HEADER() {
                    
 
                 </li>
+                <li>
+                    <Link href={"/ detalhes"}>
+                    detalhes
+                    </Link>
+                </li>
 
                 
 

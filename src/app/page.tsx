@@ -12,7 +12,7 @@ export default function Home() {
             <p className="text-[21px] ml-[77px] pt-[18px]">
               Na Audim ajudamos você a se reconectar com o mundo através de soluções auditivas personalizadas.
             </p>
-            <button className=" mt-[20px] ml-[77px] cl-[#E5105F] w-[228px] p-[20px] rounded-[15px] bg-[#E5105F] cursor-pointer text-[#fff] text-[18px] ">
+            <button className=" mt-[20px] ml-[77px] cl-[#E5105F] w-[228px] p-[12px] rounded-[15px] bg-[#E5105F] cursor-pointer text-[#fff] text-[18px] ">
               Saiba mais
             </button>
           </div>
