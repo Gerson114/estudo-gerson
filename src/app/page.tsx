@@ -1,8 +1,11 @@
-
+import { NextSeo } from 'next-seo';
 
 export default function Home() {
   return (
+
+    
     <section >
+      
       <div className=" flex justify-center max-w-5x1  w-full   mt-[50px] " >
         <div className=" flex bg-[#F1EBEB]  max-w-[1200px] w-full h-[588px]   text-[#000] rounded-[15px]   bg-[url(/Rectangle.png)]  bg-right-bottom bg-no-repeat" >
           <div className=" w-[600px]" >
@@ -43,6 +46,11 @@ export default function Home() {
         </div>
       </div>
 
+
+      
+
     </section>
+
+    
   );
 }
