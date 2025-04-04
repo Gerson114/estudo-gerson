@@ -1,5 +1,5 @@
 import { NextSeo } from 'next-seo';
-
+import Slider from '@/components/slider';
 export default function Home() {
   return (
 
@@ -32,9 +32,7 @@ export default function Home() {
       </div>
 
 
-      <div className="">
-
-      </div>
+      <Slider/>
 
 
 
@@ -43,8 +41,26 @@ export default function Home() {
           <h2>Nossos Serviços</h2>
           <hr className=" w-[300px] text-[#e11d48]  " />
 
+             <div className='bg-[#FFDADA] h-[500px] mt-[50px] rounded-[8px] flex items-center pl-[70px] ' >
+              <div className='bg-[#8F8A8A w-[377] h-[377] bg-[#8F8A8A]  rounded-[8px]  ' >
+
+              </div>
+
+               <div className='w-[500px] rounded-[25px]  pl-[50px]'>
+                <h2 className='text-[40px]'>Redescubra os sons que você ama.</h2>
+                <p className='text-[18px]' >Na Audim, ajudamos você a se reconectar com o mundo através de soluções auditivas personalizadas. Porque ouvirbem é viver melhor.</p>
+                <button className='bg-[#7A0B34] text-[#fff] text-[18px] p-[10px] mt-[20px] rounded-[5px] '>Saiba mais</button>
+
+               </div>
+
+             </div>
+
         </div>
       </div>
+
+
+
+
 
 
       
