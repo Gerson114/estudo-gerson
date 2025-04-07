@@ -1,3 +1,5 @@
+
+
 import { notFound } from "next/navigation";
 
 type Post = {
@@ -46,12 +48,25 @@ export default async function CarroDetalhe({ params }: { params: { id: string } 
   if (!post || !post.title?.rendered) return notFound();
 
   return (
-    <div className="p-4 max-w-3xl mx-auto">
-      <h2 className="text-2xl font-bold mb-4">{post.title.rendered}</h2>
-      {post.imageUrl && (
-        <img src={post.imageUrl} alt="Imagem destacada" className="mb-4 rounded-lg" />
-      )}
-      <div dangerouslySetInnerHTML={{ __html: post.excerpt?.rendered ?? "" }} />
+    <div className="  flex justify-center ">
+      <div className=" bg-[#f2f2f2] mt-[50px]  rounded-[8px] pb-[50px]">
+        <h2 className="text-2xl font-bold mb-4 pl-[25px]">
+          {post.title.rendered}</h2>
+          <div className="flex">
+            <p></p>
+          </div>
+
+
+        {post.imageUrl && (
+          <img src={post.imageUrl} alt="Imagem destacada" className="mb-4 rounded-lg" />
+        )}
+        <h2 className="text-2xl font-bold mb-4 pl-[25px]">
+          {post.title.rendered}</h2>
+        <h4 className="text-[18px] pl-[25px] pt-[10px]">{post.meta.nome}</h4>
+        <h3 className="text-[18px] pl-[25px] pt-[10px]" >{post.meta.tipo}</h3>
+        <h3 className="text-[18px] pl-[25px] pt-[10px]" >{post.meta.modelo}</h3>
+        <div dangerouslySetInnerHTML={{ __html: post.excerpt?.rendered ?? "" }} />
+      </div>
     </div>
   );
 }
