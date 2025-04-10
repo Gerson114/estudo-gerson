@@ -81,7 +81,7 @@ export default function Home() {
               procura aqui! 
             </p>
 
-            <button className='text-[18px] m-auto bg-[#000] max-w-[500px] w-[60vw] rounded-[8px] lg:m-[10px]  mt-[21px] '>buscar</button>
+            <button className='text-[18px] m-auto bg-[#000] max-w-[500px] w-[60vw] rounded-[8px] lg:m-[10px]  mt-[21px]  '>buscar</button>
 
           </div>
 

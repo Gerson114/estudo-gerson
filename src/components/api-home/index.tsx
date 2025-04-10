@@ -89,7 +89,7 @@ export async function CARD() {
                                         <div className="flex text-[13px] gap-[10px] pl-[10px]  text-gray-600">
                                             <p>{post.meta.ano}</p> /
                                             <p>{post.meta.combustivel}</p> /
-                                            <p> {post.meta.km}</p>
+                                            <p>{post.meta.km}</p>
 
                                         </div>
 
@@ -102,7 +102,7 @@ export async function CARD() {
                     </div>
                 </div>
 
-                <button className="p-[13px] border-[2px] mt-[25px] rounded-[9px] font-[600] transition-all hover:bg-[#000] hover:text-[#fff]">
+                <button className="p-[13px] border-[2px] mt-[25px] mb-[25px] rounded-[9px] font-[600] transition-all hover:bg-[#000] hover:text-[#fff]">
                     Todos os carros
                 </button>
 
