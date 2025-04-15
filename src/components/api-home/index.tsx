@@ -33,13 +33,13 @@ export async function CARD() {
 
                
         <div className="flex justify-center">
-            <div className="max-w-[1200px] w-full mt-[70px]">
-                <span className="text-[#FE000F] text-[20px] font-[500]">
+            <div className="max-w-[1150px] w-full mt-[70px]">
+                <span className="text-[#FE000F] text-[18px] font-[600]">
                     Temos o carro perfeito para você
                 </span>
-                <h2 className="font-[600] text-[40px]">Veja nossos modelos disponíveis</h2>
+                <h2 className="font-[600] text-[30px]">Veja nossos modelos disponíveis</h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-10  h-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-[10px]  h-auto">
                     {/* Destaque do primeiro post */}
                     {posts[0] && (
                         <div className="w-full bg-white rounded shadow overflow-hidden">
